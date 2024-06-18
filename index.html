@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Billetes</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Contador de Billetes</h1>
+        <div class="container-result">
+            <h2 id="resultado">Resultado: $0</h2>
+        </div>
+        <div class="input-panel">
+            <div class="input-column">
+                <div class="input-group">
+                    <label for="b5">Billetes de $5:</label>
+                    <input type="number" id="b5" value="0" min="0" data-id="b5">
+                </div>
+                <div class="input-group">
+                    <label for="b10">Billetes de $10:</label>
+                    <input type="number" id="b10" value="0" min="0" data-id="b10">
+                </div>
+            </div>
+            <div class="input-column">
+                <div class="input-group">
+                    <label for="b50">Billetes de $50:</label>
+                    <input type="number" id="b50" value="0" min="0" data-id="b50">
+                </div>
+                <div class="input-group">
+                    <label for="b100">Billetes de $100:</label>
+                    <input type="number" id="b100" value="0" min="0" data-id="b100">
+                </div>
+            </div>
+        </div>
+        <button id="calcular">Calcular Total</button>
+        <button id="limpiar">Limpiar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
